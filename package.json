@@ -1,0 +1,27 @@
+{
+	"name": "MMM-weather",
+	"version": "1.0.0",
+	"description": "Magic Mirror module for displaying weather information.",
+	"main": "MMM-weather.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/akiraheid/MMM-weather.git"
+	},
+	"scripts": {
+		"lint": "node ./node_modules/eslint/bin/eslint.js . && echo \"No linting issues\""
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/akiraheid/MMM-weather/issues"
+	},
+	"homepage": "https://github.com/akiraheid/MMM-weather",
+	"dependencies": {
+		"jquery": "^3.4.1",
+		"request": "^2.88.0",
+		"xmldom": "^0.1.27"
+	},
+	"devDependencies": {
+		"eslint": "^5.9.0"
+	}
+}
