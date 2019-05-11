@@ -1,6 +1,8 @@
+const MODULE_NAME = 'MMM-weather'
+
 // Module is defined in the Magic Mirror repo
 // eslint-disable-next-line no-undef
-Module.register('MMM-weather', {
+Module.register(MODULE_NAME, {
 
 	defaults: {
 		latitude: 36.8345528,
@@ -21,7 +23,7 @@ Module.register('MMM-weather', {
 		// eslint-disable-next-line no-undef
 		Log.info('Starting module: ' + this.name)
 
-		if (this.data.classes === 'MMM-weather') {
+		if (this.data.classes === MODULE_NAME) {
 			this.data.classes = 'bright medium'
 		}
 
@@ -51,7 +53,7 @@ Module.register('MMM-weather', {
 
 
 	getStyles: function() {
-		return ['MMM-weather.css']
+		return []
 	},
 
 
@@ -62,6 +64,11 @@ Module.register('MMM-weather', {
 
 		if (this.firstStart) {
 			wrapper.innerHTML = 'Loading weather data...'
+
+			if (this.config.width) {
+				const moduleElem = document.getElementsByClassName(MODULE_NAME)[0]
+				moduleElem.style['width'] = this.config.width
+			}
 		} else if (this.loaded) {
 			const locDiv = document.createElement('div')
 			locDiv.innerHTML =
