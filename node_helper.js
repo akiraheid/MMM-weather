@@ -29,6 +29,6 @@ module.exports = NodeHelper.create({
 		} else if (notification === 'INIT-MMM-WEATHER-PLUGIN') {
 			this.initPlugin(payload.modulePath, payload.lat, payload.lon)
 		}
-	}
+	},
 
 })
