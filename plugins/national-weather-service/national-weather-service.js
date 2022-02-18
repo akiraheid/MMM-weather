@@ -1,5 +1,5 @@
 const request = require('request')
-const DOMParser = require('xmldom').DOMParser
+const DOMParser = require('@xmldom/xmldom').DOMParser
 
 function getLocation(root) {
 	const heightElem = root.getElementsByTagName('height')[0]
