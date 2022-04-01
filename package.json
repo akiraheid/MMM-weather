@@ -17,8 +17,8 @@
 	},
 	"homepage": "https://github.com/akiraheid/MMM-weather",
 	"dependencies": {
-		"jquery": "^3.5.0",
-		"request": "^2.88.0",
-		"@xmldom/xmldom": "^0.7.0"
+		"jquery": "3.5.1",
+		"request": "2.88.0",
+		"@xmldom/xmldom": "0.7.5"
 	}
 }
