@@ -2,6 +2,7 @@
 	"name": "MMM-weather",
 	"version": "1.0.0",
 	"description": "Magic Mirror module for displaying weather information.",
+	"private": true,
 	"main": "MMM-weather.js",
 	"repository": {
 		"type": "git",
@@ -17,7 +18,6 @@
 	},
 	"homepage": "https://github.com/akiraheid/MMM-weather",
 	"dependencies": {
-		"jquery": "3.5.1",
 		"request": "2.88.0",
 		"@xmldom/xmldom": "0.7.5"
 	}
